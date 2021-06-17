@@ -1,0 +1,175 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=0.5cm,bottom=2cm,left=0.5cm,right=0.5cm,marginparwidth=1.0cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{outlines}
+\title{Monopoly}
+\author{Benjamin Jackson}
+\begin{document}
+\maketitle
+
+
+\section{Introduction}
+
+\href{https://monopoly.hasbro.com/en-us}{Monopoly} has served as a prime source of entertainment for both children and adults all around the world. The decisions one is required to make and the significant risk factors make Monopoly one of the most attractive games to humans as shown in \href{https://mashable.com/2015/01/21/monopoly-facts/#:~:text=The}{this third party evidence.}
+\\
+\\
+This overwhelming popularity has allowed for the Parker Brothers to further innovate Monopoly even making it \href{https://monopoly.hasbro.com/en-us}{playable online by cooperating with Hasbro}.
+\\
+\
+\hrule
+
+\section{Rule Improvements}
+
+\subsection{Passing Through Go}
+\begin{itemize}
+\item When a player with more than \$500 passes go, they may not collect \$200.
+\\
+\item When a player with less than \$500 passes go, only \$100 may be collected. 
+\\
+\end{itemize}
+
+To sum it up, it would look like such:
+\\
+
+
+\[
+    \$ \text{ at Go}= 
+\begin{cases}\
+    \$100, & \text{if Player > \$ 500} \\
+     \$0,              & \text{if Player < \$ 500}
+\end{cases}
+\]
+
+
+\
+\subsection{Renting Modifications}
+\begin{itemize}
+    \item If rentee has two ownership cards of the same color, rent price increases 50\%.
+    \item If rentee has all ownership cards of the same color, rent price increases 100\%. 
+
+\end{itemize}
+\subsubsection{Other Changes}
+\begin{itemize}
+    \item Triple the cost of rent universally
+    \item Double the cost of landing on railroads and utilities 
+\item Half the cost of houses and hotels
+
+\end{itemize}
+
+\textbf{In other Words:}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l|r}
+Two Cards & All Cards \\\hline
+
+\(x \times 1.5\) & \(x \times 2\)
+\end{tabular}
+
+\caption{\label{tab:widgets}Renting Value : X = Standard Rent Price}
+\end{table}
+
+\subsection{Strategic Movements (Strants)}
+\begin{itemize}
+    \item Each player is given 6 number cards (1,2,3,4,5,6)
+    \item Along with one role of a dice, the player must add the number displayed on a card.
+    \item The player must not repeat the card until all cards are used.
+
+\end{itemize}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ l | r } 
+Player X Options & Player Y Options \\
+\hline
+    1 &  1\\
+    \hline
+     2 & 2 \\
+     \hline
+     3 & 3 \\
+     \hline
+     4 & 4 \\
+     \hline
+     5 &5 \\
+     \hline
+     6 & 6 \\
+     \hline
+\end{tabular}
+\caption{\label{tab:widgets}Possible Player Cards Plus Die}
+\
+
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ l | r } 
+Player X Options & Player Y Options \\
+\hline
+    1 &  \\
+    \hline
+      & 2 \\
+     \hline
+      & 3 \\
+     \hline
+     4 &  \\
+     \hline
+      &5 \\
+     \hline
+     6 &  \\
+     \hline
+\end{tabular}
+\caption{\label{tab:widgets}Possible Player Cards Plus Die \textbf{AFTER 3 ROUNDS}}
+\end{table}
+
+\subsection{Investment}
+
+Money may be invested into the bank with a 50\% return (150\% increase) before collecting a certain “Passing Through Go” amount after a full loop is completed.\\
+\\
+\
+\texttt{Additional Situation:
+}\\
+\
+\text{If one goes bankrupt or goes to jail, only half the invested money can be taken out.}
+
+
+\subsection{Miscellaneous Modifications}
+\begin{outline}
+    \1 Bid for start order - start at \$10
+    \1 If you roll 2 doubles then pay \$100
+    \2 \textbf{However, when rolling 2 ones the player receives \$100}
+    \1 All fees from Chance and Community Chest go to the "Free Parking" pot
+    \2 Next player who lands on free parking collects sum of payments
+    \1 When player lands on community chess or chance take 2 cards 
+\1 Decrease starting amount from \$1500 to \$750
+
+\end{outline}
+\
+\hrule
+\ 
+
+\section{Conclusion}
+\
+Thank you for reading through this guide to improve your experience with the revolutionary board game, Monopoly.\\
+\\
+Feel free to share any of this information with your friends, family, community, etc...\\
+\\
+However, please refrain from publishing material that was provided within this document. \\
+\\
+
+\fontsize{80}{80}\textbf{Own It All} \text{ - Adam Smith}\\
+\\
+\\
+{\fontsize{100}{100}\selectfont \LaTeX}
+
+\end{document}
